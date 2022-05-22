@@ -1,4 +1,4 @@
 export interface Seat {
-  number: string;
+  number: number;
   isVip: boolean;
 }

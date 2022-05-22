@@ -11,3 +11,10 @@ export interface Room {
    */
   seats: Seat[][];
 }
+
+/**
+ * Returns the number of seats in a Room.
+ */
+export function getNumberOfSeats(room: Room): number {
+  return room.seats.reduce((acc, row) => acc + row.length, 0);
+}

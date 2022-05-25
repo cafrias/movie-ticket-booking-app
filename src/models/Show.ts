@@ -13,7 +13,7 @@ export interface Show {
   dateTime: string;
   movie: string;
   room: string;
-  seats: SeatOccupancy.SeatOccupancy[][];
+  seats: SeatOccupancy.SeatOccupancy[];
 }
 
 interface CreateDTO {
@@ -29,9 +29,7 @@ export function create(dto: CreateDTO): Show {
   return {
     id: uuidv4(),
     dateTime: dto.dateTime,
-    seats: dto.room.seats.map((row) =>
-      row.map((seat) => ({ ...seat, vacant: true }))
-    ),
+    seats: dto.room.seats.map((seat) => ({ ...seat, vacant: true })),
     movie: dto.movie.id,
     room: dto.room.id,
   };

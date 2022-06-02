@@ -1,6 +1,6 @@
 import { Room } from "../../models/Room";
 
-export const mockedRooms: Room[] = [
+export const mockRooms: Room[] = [
   {
     id: "c86ad112-67aa-48fa-9400-ec2176f3f363",
     name: "1",

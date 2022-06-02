@@ -1,12 +1,12 @@
 import { Room, Show } from ".";
-import { mockedMovies } from "../test/data/mockedMovies";
-import { mockedRooms } from "../test/data/mockedRooms";
+import { mockMovies } from "../data/mocks/mockMovies";
+import { mockRooms } from "../data/mocks/mockRooms";
 
 describe("Show", () => {
   describe("create", () => {
     test("creates correctly", () => {
-      const movie = mockedMovies[0];
-      const room = mockedRooms[0];
+      const movie = mockMovies[0];
+      const room = mockRooms[0];
       const nextWeekAt20 = new Date();
       nextWeekAt20.setDate(nextWeekAt20.getDate() + 7);
 
@@ -19,15 +19,10 @@ describe("Show", () => {
       expect(newShow.dateTime).toBe(nextWeekAt20.toISOString());
 
       // Creates all seats vacant
-      const numberOfSeats = newShow.seats.reduce(
-        (acc, row) => acc + row.length,
-        0
-      );
+      const numberOfSeats = newShow.seats.length;
       expect(numberOfSeats).toBe(Room.getNumberOfSeats(room));
-      for (const row of newShow.seats) {
-        for (const seat of row) {
-          expect(seat.vacant).toBe(true);
-        }
+      for (const seat of newShow.seats) {
+        expect(seat.vacant).toBe(true);
       }
 
       expect(newShow.movie).toBe(movie.id);

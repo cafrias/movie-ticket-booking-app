@@ -14,7 +14,7 @@ export const mockMovies: Movie[] = [
     id: "8d36898f-793a-4be0-82c5-2958c3325682",
     coverImg: "/img/8d36898f-793a-4be0-82c5-2958c3325682-cover.jpg",
     thumbnailImg: "/img/8d36898f-793a-4be0-82c5-2958c3325682-thumb.jpg",
-    title: "Other Movie",
+    title: "Morbius",
     subTitle: "in the Multiverse of Madness",
     synopsis:
       "Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse, including alternate versions of himself, whose threat to humanity is too great for the combined forces of Strange, Wong, and Wanda Maximoff.",
@@ -23,7 +23,7 @@ export const mockMovies: Movie[] = [
     id: "0320c820-d6aa-4621-b7d1-f58e1df8ecbf",
     coverImg: "/img/0320c820-d6aa-4621-b7d1-f58e1df8ecbf-cover.jpg",
     thumbnailImg: "/img/0320c820-d6aa-4621-b7d1-f58e1df8ecbf-thumb.jpg",
-    title: "Other Movie II",
+    title: "Sonic 2",
     subTitle: "in the Multiverse of Madness",
     synopsis:
       "Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse, including alternate versions of himself, whose threat to humanity is too great for the combined forces of Strange, Wong, and Wanda Maximoff.",
@@ -32,7 +32,7 @@ export const mockMovies: Movie[] = [
     id: "19af8e37-80c1-40fb-8d77-41bca52cfe17",
     coverImg: "/img/19af8e37-80c1-40fb-8d77-41bca52cfe17-cover.jpg",
     thumbnailImg: "/img/19af8e37-80c1-40fb-8d77-41bca52cfe17-thumb.jpg",
-    title: "No Show",
+    title: "Uncharted",
     subTitle: "in the Multiverse of Madness",
     synopsis:
       "Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse, including alternate versions of himself, whose threat to humanity is too great for the combined forces of Strange, Wong, and Wanda Maximoff.",

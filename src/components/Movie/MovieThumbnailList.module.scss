@@ -1,0 +1,33 @@
+.title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 0;
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.list {
+  display: flex;
+  overflow-x: auto;
+  list-style: none;
+  padding: 0;
+  padding: 0 1rem;
+}
+
+.item {
+  margin-right: 1.25rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.img {
+  display: block;
+  width: 100px;
+  height: 130px;
+  border-radius: 20px;
+}

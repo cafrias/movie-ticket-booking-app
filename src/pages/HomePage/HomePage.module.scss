@@ -1,0 +1,33 @@
+.container {
+  background: linear-gradient(170.53deg, #2E1371 2.71%, #130B2B 97.75%);
+  padding-top: 2.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);
+  margin-top: 0;
+}
+
+.form {
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search {
+  display: block;
+  width: 100%;
+  background: rgba(118, 118, 128, 0.12);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+  }
+}

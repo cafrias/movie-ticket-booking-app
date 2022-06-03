@@ -15,19 +15,31 @@ export interface FetchMoviesInput {
      * Filters the movies that have at least one show to this date in ISO format.
      */
     showTo?: string;
+
+    /**
+     * Array of movie IDs to exclude.
+     */
+    exclude?: string[];
   };
 }
 
 export async function fetchMovies(
   input: FetchMoviesInput = {}
 ): Promise<Movie.Movie[]> {
-  const { search, showFrom, showTo } = input.filters || {};
+  const { search, showFrom, showTo, exclude } = input.filters || {};
 
-  const movieIds = new Set(
-    (await fetchShows({ filters: { from: showFrom, to: showTo } })).map(
-      (s) => s.movie
-    )
-  );
+  let movieIds: Set<string>;
+  if (showFrom || showTo) {
+    movieIds = new Set(
+      (await fetchShows({ filters: { from: showFrom, to: showTo } })).map(
+        (s) => s.movie
+      )
+    );
+  } else {
+    movieIds = new Set();
+  }
+
+  const excluded = new Set(exclude);
 
   const filtered = mockMovies.filter((movie) => {
     if (search && !Movie.matchesSearch(movie, search)) {
@@ -35,6 +47,10 @@ export async function fetchMovies(
     }
 
     if (movieIds.size > 0 && !movieIds.has(movie.id)) {
+      return false;
+    }
+
+    if (excluded.size > 0 && excluded.has(movie.id)) {
       return false;
     }
 

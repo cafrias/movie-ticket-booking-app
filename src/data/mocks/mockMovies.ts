@@ -29,9 +29,9 @@ export const mockMovies: Movie[] = [
       "Dr. Stephen Strange casts a forbidden spell that opens the doorway to the multiverse, including alternate versions of himself, whose threat to humanity is too great for the combined forces of Strange, Wong, and Wanda Maximoff.",
   },
   {
-    id: "0320c820-d6aa-4621-b7d1-f58e1df8ecbf",
-    coverImg: "/img/0320c820-d6aa-4621-b7d1-f58e1df8ecbf-cover.jpg",
-    thumbnailImg: "/img/0320c820-d6aa-4621-b7d1-f58e1df8ecbf-thumb.jpg",
+    id: "19af8e37-80c1-40fb-8d77-41bca52cfe17",
+    coverImg: "/img/19af8e37-80c1-40fb-8d77-41bca52cfe17-cover.jpg",
+    thumbnailImg: "/img/19af8e37-80c1-40fb-8d77-41bca52cfe17-thumb.jpg",
     title: "No Show",
     subTitle: "in the Multiverse of Madness",
     synopsis:

@@ -17,6 +17,10 @@ export function HomePage() {
         </form>
 
         <MovieThumbnailList items={mockMovies} title="Now Playing" />
+
+        <MovieThumbnailList items={mockMovies} title="Coming Soon" />
+
+        <MovieThumbnailList items={mockMovies} title="Top movies" />
       </section>
       <nav>
         <ul>

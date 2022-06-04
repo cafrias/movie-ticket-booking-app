@@ -1,5 +1,8 @@
 .container {
-  background: linear-gradient(170.53deg, #2E1371 2.71%, #130B2B 97.75%);
+  background: 
+    radial-gradient(circle at 0% 35%, rgba(96, 255, 202, 0.32) 10%, rgba(255,83,192,0) 60%),
+    radial-gradient(circle at 100% 65%, rgba(255,83,192,0.32) 10%, rgba(255,83,192,0) 60%),
+    linear-gradient(170.53deg, #2E1371 2.71%, #130B2B 97.75%);
   padding-top: 2.5rem;
 }
 
@@ -22,12 +25,11 @@
   background: rgba(118, 118, 128, 0.12);
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: bold;
+  font-size: 1rem;
   padding: 0.5rem 1rem;
   border: none;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: bold;
+    color: rgba(255, 255, 255, 0.6)
   }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { BottomNav } from "../../components/BottomNav/BottomNav";
 import { MovieThumbnailList } from "../../components/Movie/MovieThumbnailList";
 import { mockMovies } from "../../data/mocks/mockMovies";
 
@@ -22,25 +23,7 @@ export function HomePage() {
 
         <MovieThumbnailList items={mockMovies} title="Top movies" />
       </section>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Location</a>
-          </li>
-          <li>
-            <a href="#">Tickets</a>
-          </li>
-          <li>
-            <a href="#">Tiles</a>
-          </li>
-          <li>
-            <a href="#">Account</a>
-          </li>
-        </ul>
-      </nav>
+      <BottomNav />
     </>
   );
 }

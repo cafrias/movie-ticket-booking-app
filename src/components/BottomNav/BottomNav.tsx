@@ -7,6 +7,7 @@ import { BottomNavLinks } from "./constants";
 export function BottomNav() {
   return (
     <nav className={css.container}>
+      <div className={css.background}></div>
       <ul className={css.list}>
         {BottomNavLinks.map((l) => {
           return (
